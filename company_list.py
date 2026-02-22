@@ -1,0 +1,16 @@
+COMPANIES = {
+    "NABIL": "Nabil Bank",
+    "NICA": "NIC Asia Bank",
+    "GBIME": "Global IME Bank",
+    "SBL": "Siddhartha Bank Limited",
+    "NMB": "NMB Bank Limited",
+    "MBL": "Machhapuchchhre Bank Limited",
+    "SBI": "Nepal SBI Bank Limited",
+    "EBL": "Everest Bank Limited",
+    "KBL": "Kumari Bank Limited",
+    "CHCL": "chilime Hydropower Company Limited",
+    "UPPER": "Upper Tamakoshi Hydropower Limited",
+    "MKHC": "Maya Khola Hydropower Company Limited",
+    "MHL": "Mandakini Hydropower Limited",
+    "RHGCL": "Rapti Hydro & General Construction Limited",
+}
