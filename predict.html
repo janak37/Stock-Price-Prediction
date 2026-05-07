@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Predict &mdash; ShareSathi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="/static/predict.css"/>
+</head>
+<body data-page="predict">
+<nav class="navbar">
+  <a href="/" class="nav-logo">
+    <div class="nav-logo-icon">&#x53;</div>
+    <div class="nav-logo-text">
+      <div class="nav-logo-name">Share<span>Sathi</span></div>
+      <div class="nav-logo-sub">&#2360;&#2375;&#2351;&#2352; &#2360;&#2366;&#2341;&#2368; &middot; Stock Prediction</div>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="/" class="nav-a">Home</a>
+    <a href="/companies" class="nav-a">Companies</a>
+    <a href="/predict" class="nav-a cur">Predict</a>
+    <a href="/sentiment" class="nav-a">Sentiment</a>
+  </div>
+  <div class="nav-right" id="nav-right">
+    <a href="/admin/login" class="nav-admin-btn">Admin Login</a>
+  </div>
+</nav>
+<div class="ticker-wrap"><div class="ticker">
+  <div class="ti"><span class="ti-sym">NABIL</span><span class="ti-up">&#9650; 1,618.50</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">NICA</span><span class="ti-dn">&#9660; 892.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">SBI</span><span class="ti-up">&#9650; 345.60</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">EBL</span><span class="ti-up">&#9650; 1,240.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">KBL</span><span class="ti-dn">&#9660; 410.50</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">MBL</span><span class="ti-up">&#9650; 520.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">CHCL</span><span class="ti-dn">&#9660; 680.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">GBIME</span><span class="ti-up">&#9650; 295.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">NMB</span><span class="ti-up">&#9650; 440.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">SBL</span><span class="ti-dn">&#9660; 388.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">UPPER</span><span class="ti-up">&#9650; 205.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">MHL</span><span class="ti-dn">&#9660; 167.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">RHGCL</span><span class="ti-up">&#9650; 310.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">API</span><span class="ti-up">&#9650; 210.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">AHPC</span><span class="ti-dn">&#9660; 180.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">BPCL</span><span class="ti-up">&#9650; 340.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">NABIL</span><span class="ti-up">&#9650; 1,618.50</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">NICA</span><span class="ti-dn">&#9660; 892.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">SBI</span><span class="ti-up">&#9650; 345.60</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">EBL</span><span class="ti-up">&#9650; 1,240.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">KBL</span><span class="ti-dn">&#9660; 410.50</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">MBL</span><span class="ti-up">&#9650; 520.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">CHCL</span><span class="ti-dn">&#9660; 680.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">GBIME</span><span class="ti-up">&#9650; 295.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">NMB</span><span class="ti-up">&#9650; 440.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">SBL</span><span class="ti-dn">&#9660; 388.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">UPPER</span><span class="ti-up">&#9650; 205.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">MHL</span><span class="ti-dn">&#9660; 167.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">RHGCL</span><span class="ti-up">&#9650; 310.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">API</span><span class="ti-up">&#9650; 210.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">AHPC</span><span class="ti-dn">&#9660; 180.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">BPCL</span><span class="ti-up">&#9650; 340.00</span></div><span class="ti-sep">&bull;</span>
+</div></div>
+<div class="page-offset">
+  <div class="main-wrap">
+    <div class="content">
+      <div id="predict-error" class="alert alert-error" style="display:none"></div>
+<div class="page-head">
+  <h1>Predict Stock Price</h1>
+  <p>Select a company to predict tomorrow's Last Traded Price using Linear Regression and ANN.</p>
+</div>
+
+<div class="predict-layout">
+
+  <!-- LEFT: FORM -->
+  <div class="predict-form-card">
+    <div class="card">
+      <div class="card-title">Select Company</div>
+      <form id="predict-form">
+        <div class="form-group">
+          <label class="form-label" style="font-size:11.5px;color:var(--text2);margin-bottom:4px;display:block;">1. Select Sector</label>
+          <select id="sector-select" class="form-control" required>
+            <option value="" disabled selected>Choose a sector...</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" style="font-size:11.5px;color:var(--text2);margin-bottom:4px;display:block;">2. Select Company</label>
+          <select id="company-select" name="company" class="form-control" required disabled>
+            <option value="" disabled selected>Choose a company...</option>
+          </select>
+        </div>
+        <div class="model-tag-row">
+          <div class="model-tag"><div class="model-dot dot-lr"></div><div><div class="model-tag-name">Linear Regression</div><div class="model-tag-sub">Normal Equation</div></div></div>
+          <div class="model-tag"><div class="model-dot dot-ann"></div><div><div class="model-tag-name">Neural Network</div><div class="model-tag-sub">Backpropagation</div></div></div>
+        </div>
+        <button type="submit" class="btn-predict-full">
+          <span class="btn-txt">Predict Price</span>
+          <span class="btn-ld" style="display:none">Analysing...</span>
+        </button>
+      </form>
+
+      <div class="sent-meter-mini" id="sent-meter-mini" style="display:none">
+        <div style="font-size:11px;font-weight:600;color:var(--text2);margin-bottom:8px">Sentiment Signal</div>
+        <div class="mini-zone-row">
+          <div class="mz mz-sb" id="meter-sb">STR.BEAR</div>
+          <div class="mz mz-wb" id="meter-wb">WK.BEAR</div>
+          <div class="mz mz-n" id="meter-n">NEUTRAL</div>
+          <div class="mz mz-wbu" id="meter-wbu">WK.BULL</div>
+          <div class="mz mz-sbu" id="meter-sbu">STR.BULL</div>
+        </div>
+        <div class="mini-needle-track">
+          <div class="mini-needle-dot" id="mini-needle-dot" style="left:5%"></div>
+        </div>
+        <div class="mini-ticks"><span>-1.0</span><span>-0.5</span><span>0</span><span>+0.5</span><span>+1.0</span></div>
+        <div style="text-align:center;margin-top:8px">
+          <span class="badge b-neut" id="mini-sentiment-badge">NEUTRAL</span>
+          <span style="font-size:11.5px;color:var(--muted);margin-left:8px;font-family:'Poppins',sans-serif;font-weight:700" id="mini-sentiment-score">0.00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: RESULTS -->
+  <div>
+    <div class="no-result" id="predict-no-result">
+      <div style="font-size:15px;font-weight:600;color:var(--text);margin-bottom:6px">Select a Company</div>
+      <div style="font-size:13px">Choose a company from the form on the left and click Predict.</div>
+    </div>
+
+    <div class="pred-row">
+      <div class="pred-card pred-lr">
+        <div class="pred-model-lbl">Linear Regression</div>
+        <div class="pred-price text-accent">NPR <span id="lr-price">N/A</span></div>
+        <div class="pred-currency">Predicted LTP for next day</div>
+        <div class="pred-r2">R&sup2; Accuracy &nbsp;<strong id="lr-r2">0%</strong></div>
+      </div>
+      <div class="pred-card pred-ann">
+        <div class="pred-model-lbl">Neural Network (ANN)</div>
+        <div class="pred-price text-green">NPR <span id="ann-price">N/A</span></div>
+        <div class="pred-currency">Predicted LTP for next day</div>
+        <div class="pred-r2">R&sup2; Accuracy &nbsp;<strong id="ann-r2">0%</strong></div>
+      </div>
+    </div>
+
+    <div class="winner-banner" id="better-banner">
+      <strong id="better-model">Model</strong> performs better with <strong id="better-diff">0%</strong> higher R&sup2; score.
+    </div>
+
+    <div style="font-size:11.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px" id="latest-date">Last Recorded Data &mdash; --</div>
+    <div class="info-row mb-16">
+      <div class="info-cell"><div class="info-lbl">Open</div><div class="info-val" id="latest-open">--</div></div>
+      <div class="info-cell"><div class="info-lbl">High</div><div class="info-val" id="latest-high">--</div></div>
+      <div class="info-cell"><div class="info-lbl">Low</div><div class="info-val" id="latest-low">--</div></div>
+      <div class="info-cell"><div class="info-lbl">LTP</div><div class="info-val" id="latest-ltp">--</div></div>
+      <div class="info-cell"><div class="info-lbl">Qty</div><div class="info-val" id="latest-qty">--</div></div>
+      <div class="info-cell"><div class="info-lbl">Sentiment</div><div class="info-val" id="latest-sentiment">--</div></div>
+    </div>
+
+    <div style="font-size:11.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:12px">Analytics Charts</div>
+    <div class="chart-card"><div class="chart-card-title">R&sup2; Accuracy Comparison</div><div style="height:120px"><canvas id="r2Ch"></canvas></div></div>
+    <div class="chart-card"><div class="chart-card-title">Predicted Price &mdash; LR vs ANN</div><div style="height:120px"><canvas id="prCh"></canvas></div></div>
+    <div class="chart-card"><div class="chart-card-title">Actual vs Predicted (Historical)</div><div style="height:220px"><canvas id="avpCh"></canvas></div></div>
+    <div class="chart-card"><div class="chart-card-title">LTP + 20-Day Moving Average</div><div style="height:200px"><canvas id="maCh"></canvas></div></div>
+    <div class="chart-card"><div class="chart-card-title">RSI &mdash; Relative Strength Index (14-day)</div><div style="height:170px"><canvas id="rsiCh"></canvas></div></div>
+    <div class="chart-card"><div class="chart-card-title">Volume (Qty Traded)</div><div style="height:160px"><canvas id="volCh"></canvas></div></div>
+    <div class="chart-card"><div class="chart-card-title">Daily Sentiment Score</div><div style="height:160px"><canvas id="sentCh"></canvas></div></div>
+    <div class="site-info-section">
+      <div class="site-info-head">
+        <div class="eyebrow">Website Information</div>
+        <h2>Structured like a real financial analytics platform.</h2>
+        <p>ShareSathi shows model predictions, sentiment signals, and dataset context using a clean production-style layout instead of a demo interface.</p>
+      </div>
+      <div class="info-grid">
+        <div class="info-box">
+          <div class="info-box-title">Real data flow</div>
+          <div class="info-box-text">Uses historical price and sentiment data to feed prediction models in a consistent workflow.</div>
+        </div>
+        <div class="info-box">
+          <div class="info-box-title">Model comparators</div>
+          <div class="info-box-text">Side-by-side results for Linear Regression and ANN, plus clear accuracy and chart analytics.</div>
+        </div>
+        <div class="info-box">
+          <div class="info-box-title">Operational UI</div>
+          <div class="info-box-text">Dashboard-style panels, status blocks, and chart analytics make the site feel practical and polished.</div>
+        </div>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          ShareSathi
+          <p>One platform for stock price predictions and sentiment insights. Built to look and behave like a real trader dashboard.</p>
+        </div>
+        <div class="footer-links">
+          <strong>Platform</strong>
+          <a href="/">Home</a>
+          <a href="/predict">Predict</a>
+          <a href="/sentiment">Sentiment</a>
+        </div>
+        <div class="footer-links">
+          <strong>Website Information</strong>
+          <span>Prediction uses latest available company data.</span>
+          <span>Model metrics compare LR and ANN performance.</span>
+          <span>Sentiment data is derived from trained Naive Bayes labels.</span>
+        </div>
+      </div>
+      <div class="footer-note">
+        <span>© 2026 ShareSathi</span>
+        <span>Created as a realistic analytic tool, not a product demo.</span>
+        <span>Session-safe admin and model workflows included.</span>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="/static/site.js"></script>
+<script>
+function doSub(f){const t=f.querySelector('.btn-txt'),l=f.querySelector('.btn-ld');t.style.display='none';l.style.display='inline';}
+</script>
+    </div>
+  </div>
+</div>
+</body>
+</html>

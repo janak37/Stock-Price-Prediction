@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Stock Indicator &mdash; ShareSathi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/static/sentiment.css">
+</head>
+<body data-page="sentiment">
+<nav class="navbar">
+  <a href="/" class="nav-logo">
+    <div class="nav-logo-icon">&#x53;</div>
+    <div class="nav-logo-text">
+      <div class="nav-logo-name">Share<span>Sathi</span></div>
+      <div class="nav-logo-sub">&#2360;&#2375;&#2351;&#2352; &#2360;&#2366;&#2341;&#2368; &middot; Stock Prediction</div>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="/" class="nav-a">Home</a>
+    <a href="/companies" class="nav-a">Companies</a>
+    <a href="/predict" class="nav-a">Predict</a>
+    <a href="/sentiment" class="nav-a cur">Sentiment</a>
+  </div>
+  <div class="nav-right" id="nav-right">
+    <a href="/admin/login" class="nav-admin-btn">Admin Login</a>
+  </div>
+</nav>
+<div class="ticker-wrap"><div class="ticker">
+  <div class="ti"><span class="ti-sym">NABIL</span><span class="ti-up">&#9650; 1,618.50</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">NICA</span><span class="ti-dn">&#9660; 892.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">SBI</span><span class="ti-up">&#9650; 345.60</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">EBL</span><span class="ti-up">&#9650; 1,240.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">KBL</span><span class="ti-dn">&#9660; 410.50</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">MBL</span><span class="ti-up">&#9650; 520.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">CHCL</span><span class="ti-dn">&#9660; 680.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">GBIME</span><span class="ti-up">&#9650; 295.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">NMB</span><span class="ti-up">&#9650; 440.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">SBL</span><span class="ti-dn">&#9660; 388.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">UPPER</span><span class="ti-up">&#9650; 205.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">MHL</span><span class="ti-dn">&#9660; 167.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">RHGCL</span><span class="ti-up">&#9650; 310.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">NABIL</span><span class="ti-up">&#9650; 1,618.50</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">NICA</span><span class="ti-dn">&#9660; 892.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">SBI</span><span class="ti-up">&#9650; 345.60</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">EBL</span><span class="ti-up">&#9650; 1,240.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">KBL</span><span class="ti-dn">&#9660; 410.50</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">MBL</span><span class="ti-up">&#9650; 520.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">CHCL</span><span class="ti-dn">&#9660; 680.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">GBIME</span><span class="ti-up">&#9650; 295.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">NMB</span><span class="ti-up">&#9650; 440.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">SBL</span><span class="ti-dn">&#9660; 388.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">UPPER</span><span class="ti-up">&#9650; 205.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">MHL</span><span class="ti-dn">&#9660; 167.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">RHGCL</span><span class="ti-up">&#9650; 310.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">API</span><span class="ti-up">&#9650; 210.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">AHPC</span><span class="ti-dn">&#9660; 180.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">BPCL</span><span class="ti-up">&#9650; 340.00</span></div><span class="ti-sep">&bull;</span>
+</div></div>
+<div class="page-offset">
+  <div class="main-wrap">
+    <div class="content">
+      <div id="flash-messages"></div>
+<div class="page-head">
+  <h1>Stock Indicator</h1>
+  <p>Select a company to view its Naive Bayes sentiment score on the gauge.</p>
+</div>
+
+<div class="card mb-24">
+  <div class="card-title"><span class="ct-icon">&#127970;</span> Select Company</div>
+  <p style="font-size:12.5px;color:var(--muted)">Choose a company from the dropdown below to view its sentiment signal.</p>
+  <div class="comp-select-row" style="display:flex;gap:16px;">
+    <div style="flex:1;">
+      <label class="form-label" style="font-size:11.5px;color:var(--text2);margin-bottom:4px;display:block;">1. Select Sector</label>
+      <select id="sector-picker" class="form-control">
+        <option value="">Select a sector</option>
+      </select>
+    </div>
+    <div style="flex:1;">
+      <label class="form-label" style="font-size:11.5px;color:var(--text2);margin-bottom:4px;display:block;">2. Select Company</label>
+      <select id="company-picker" class="form-control" disabled>
+        <option value="">Select a company</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Gauge — hidden until company selected -->
+  <div class="gauge-container" id="sentGauge">
+    <div class="gauge-hdr">
+      <div>
+        <div class="gauge-sym-lg" id="gSym"></div>
+        <div class="gauge-fullname-txt" id="gFull"></div>
+      </div>
+    </div>
+    <div class="gauge-wrap"><svg viewBox="0 0 360 195" xmlns="http://www.w3.org/2000/svg" class="gauge-svg">
+  <!-- Dark track -->
+  <path d="M 30,175 A 150,150 0 0,1 330,175" fill="none" stroke="#e2e8f0" stroke-width="28"/>
+  <!-- 5 segments: each 36 degrees. Points computed for centre=(180,175) r=150
+       a=0:  (30,175)   a=36: (58.6,86.8)   a=72: (133.6,32.3)
+       a=108: (226.4,32.3)  a=144: (301.4,86.8)  a=180: (330,175) -->
+  <path d="M 30,175    A 150,150 0 0,1 58.6,86.8"  fill="none" stroke="#dc2626" stroke-width="26"/>
+  <path d="M 58.6,86.8  A 150,150 0 0,1 133.6,32.3" fill="none" stroke="#f97316" stroke-width="26"/>
+  <path d="M 133.6,32.3 A 150,150 0 0,1 226.4,32.3" fill="none" stroke="#d97706" stroke-width="26"/>
+  <path d="M 226.4,32.3 A 150,150 0 0,1 301.4,86.8" fill="none" stroke="#16a34a" stroke-width="26"/>
+  <path d="M 301.4,86.8 A 150,150 0 0,1 330,175"    fill="none" stroke="#15803d" stroke-width="26"/>
+  <!-- Labels -->
+  <text x="46"  y="135" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#dc2626" text-anchor="middle" transform="rotate(-72 46 135)">STRONG</text>
+  <text x="46"  y="145" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#dc2626" text-anchor="middle" transform="rotate(-72 46 145)">BEARISH</text>
+  <text x="98"  y="55"  font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#f97316" text-anchor="middle" transform="rotate(-36 98 55)">WEAK</text>
+  <text x="98"  y="65"  font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#f97316" text-anchor="middle" transform="rotate(-36 98 65)">BEARISH</text>
+  <text x="180" y="18"  font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#d97706" text-anchor="middle">NEUTRAL</text>
+  <text x="262" y="55"  font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#16a34a" text-anchor="middle" transform="rotate(36 262 55)">WEAK</text>
+  <text x="262" y="65"  font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#16a34a" text-anchor="middle" transform="rotate(36 262 65)">BULLISH</text>
+  <text x="314" y="135" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#15803d" text-anchor="middle" transform="rotate(72 314 135)">STRONG</text>
+  <text x="314" y="145" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#15803d" text-anchor="middle" transform="rotate(72 314 145)">BULLISH</text>
+  <!-- Needle pivots at (180,175) -->
+  <g id="gNeedle" style="transform-origin:180px 175px;transform:rotate(0deg);transition:transform 1s cubic-bezier(0.34,1.15,0.64,1)">
+    <line x1="180" y1="175" x2="180" y2="44" stroke="#94a3b8" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="180" y1="175" x2="180" y2="44" stroke="#1e293b" stroke-width="3"   stroke-linecap="round"/>
+    <circle cx="180" cy="44"  r="5" fill="#1e293b"/>
+    <circle cx="180" cy="175" r="12" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+    <circle cx="180" cy="175" r="5"  fill="#1a56db"/>
+  </g>
+  <text x="180" y="157" id="gCentreScore" font-family="'Poppins',sans-serif" font-size="22" font-weight="700" fill="#1a202c" text-anchor="middle" opacity="0">--</text>
+</svg></div>
+    <div class="gauge-result" id="gResult" style="display:none">
+      <div class="gauge-score-num" id="gScoreNum"></div>
+      <div>
+        <div class="badge gauge-badge-lg" id="gBadge"></div>
+        <div class="gauge-desc-txt" id="gDescTxt"></div>
+      </div>
+    </div>
+    <div class="predict-cta">
+      <span class="predict-cta-txt">&#128200; Want to predict the price for this company?</span>
+      <a href="/predict" class="btn btn-primary">Predict Price &rarr;</a>
+    </div>
+    <div class="gauge-note mt-8">Based on Naive Bayes NLP classification &middot; Scale: &minus;1.0 to +1.0</div>
+  </div>
+</div>
+<div class="site-info-section">
+  <div class="site-info-head">
+    <div class="eyebrow">Website Information</div>
+    <h2>Designed as a real sentiment analytics system.</h2>
+    <p>The sentiment page provides company-level signal interpretation, practical model insight, and a structured site experience.</p>
+  </div>
+  <div class="info-grid">
+    <div class="info-box">
+      <div class="info-box-title">Signal clarity</div>
+      <div class="info-box-text">Sentiment scores are shown in clear bullish/bearish categories for investor-style review.</div>
+    </div>
+    <div class="info-box">
+      <div class="info-box-title">Consistent branding</div>
+      <div class="info-box-text">Uses the same navigation, ticker, and footer structure as the rest of the platform.</div>
+    </div>
+    <div class="info-box">
+      <div class="info-box-title">Practical layout</div>
+      <div class="info-box-text">A polished, production-like layout makes this feel like a real market intelligence dashboard.</div>
+    </div>
+  </div>
+</div>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      ShareSathi
+      <p>Stock indicator and sentiment dashboard with company-level scoring and investor-friendly analysis.</p>
+    </div>
+    <div class="footer-links">
+      <strong>Platform</strong>
+      <a href="/">Home</a>
+      <a href="/predict">Predict</a>
+      <a href="/sentiment">Sentiment</a>
+    </div>
+    <div class="footer-links">
+      <strong>Website Information</strong>
+      <span>Sentiment is calculated from financial news and stock context.</span>
+      <span>Signals are classified into five meaningful categories.</span>
+      <span>Dashboard structure is built to match real trading tools.</span>
+    </div>
+  </div>
+  <div class="footer-note">
+    <span>© 2026 ShareSathi</span>
+    <span>Developed as a real system experience with clear website information.</span>
+    <span>Complete prediction and sentiment monitoring in one interface.</span>
+  </div>
+</footer>
+<script>
+
+const SIG=[
+  {min:0.75, cls:'gs-sbull',bc:'b-sbull',ci:'c4',lb:'STRONG BULLISH',dc:'Very positive news sentiment. Strong upward confidence.'},
+  {min:0.25, cls:'gs-wbull',bc:'b-wbull',ci:'c3',lb:'WEAK BULLISH',  dc:'Mildly positive sentiment. Some upward pressure detected.'},
+  {min:-0.25,cls:'gs-neut', bc:'b-neut', ci:'c2',lb:'NEUTRAL',        dc:'No strong directional signal. Market sentiment is flat.'},
+  {min:-0.75,cls:'gs-wbear',bc:'b-wbear',ci:'c1',lb:'WEAK BEARISH',  dc:'Mildly negative sentiment. Some downward pressure detected.'},
+  {min:-1.1, cls:'gs-sbear',bc:'b-sbear',ci:'c0',lb:'STRONG BEARISH',dc:'Very negative news sentiment. Strong downward pressure.'},
+];
+const CATS=['c0','c1','c2','c3','c4'];
+const CN={NABIL:'Nabil Bank',NICA:'NIC Asia Bank',SBI:'SBI Bank',EBL:'Everest Bank',KBL:'Kumari Bank',MBL:'Machhapuchchhre Bank',CHCL:'Chilime Hydropower',GBIME:'Global IME Bank',NMB:'NMB Bank',SBL:'Sanima Bank',UPPER:'Upper Tamakoshi',MHL:'Marsyangdi Hydropower',RHGCL:'Ridi Hydropower',API:'Api Power',AHPC:'Arun Valley',BPCL:'Butwal Power'};
+function applyGauge(sym,score){
+  const sig=SIG.find(s=>score>=s.min)||SIG[4];
+  // Needle: score -1→-90deg, 0→0deg, +1→+90deg
+  const el=document.getElementById('gNeedle');
+  if(el) el.style.transform='rotate('+(score*90)+'deg)';
+  const cs=document.getElementById('gCentreScore');
+  if(cs){cs.textContent=score.toFixed(2);cs.setAttribute('opacity','1');}
+  // Categories
+  CATS.forEach(id=>{const e=document.getElementById(id);if(e)e.classList.remove('active');});
+  const ac=document.getElementById(sig.ci);
+  if(ac) ac.classList.add('active');
+  // Score number
+  const sn=document.getElementById('gScoreNum');
+  if(sn){sn.textContent=score.toFixed(2);sn.className='gauge-score-num '+sig.cls;}
+  // Badge
+  const bd=document.getElementById('gBadge');
+  if(bd){bd.textContent=sig.lb;bd.className='badge gauge-badge-lg '+sig.bc;}
+  // Desc
+  const dc=document.getElementById('gDescTxt');
+  if(dc) dc.textContent=sig.dc;
+  // Result visibility
+  const gr=document.getElementById('gResult');
+  if(gr) gr.style.display='flex';
+  // Sym / name
+  const gn=document.getElementById('gSym');if(gn)gn.textContent=sym;
+  const gfn=document.getElementById('gFull');if(gfn)gfn.textContent=CN[sym]||sym;
+}
+
+let sBtn = null;
+function sentPick(sym, score, btn) {
+  if (sBtn) sBtn.classList.remove('sel');
+  if (btn) {
+    btn.classList.add('sel');
+    sBtn = btn;
+  } else {
+    sBtn = null;
+  }
+  const gc = document.getElementById('sentGauge');
+  if (gc) gc.classList.add('show');
+  applyGauge(sym, score);
+  setTimeout(() => gc.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 120);
+}
+</script>
+<script src="/static/site.js"></script>
+    </div>
+  </div>
+</div>
+</body>
+</html>

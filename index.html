@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Home &mdash; ShareSathi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="/static/index.css?v=2"/>
+</head>
+<body data-page="index">
+<nav class="navbar">
+  <a href="/" class="nav-logo">
+    <div class="nav-logo-icon">&#x53;</div>
+    <div class="nav-logo-text">
+      <div class="nav-logo-name">Share<span>Sathi</span></div>
+      <div class="nav-logo-sub">&#2360;&#2375;&#2351;&#2352; &#2360;&#2366;&#2341;&#2368; &middot; Stock Prediction</div>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="/" class="nav-a cur">Home</a>
+    <a href="/companies" class="nav-a">Companies</a>
+    <a href="/predict" class="nav-a">Predict</a>
+    <a href="/sentiment" class="nav-a">Sentiment</a>
+  </div>
+  <div class="nav-right" id="nav-right">
+    <a href="/admin/login" class="nav-admin-btn">Admin Login</a>
+  </div>
+</nav>
+<div class="ticker-wrap"><div class="ticker">
+  <div class="ti"><span class="ti-sym">NABIL</span><span class="ti-up">&#9650; 1,618.50</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">NICA</span><span class="ti-dn">&#9660; 892.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">SBI</span><span class="ti-up">&#9650; 345.60</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">EBL</span><span class="ti-up">&#9650; 1,240.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">KBL</span><span class="ti-dn">&#9660; 410.50</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">MBL</span><span class="ti-up">&#9650; 520.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">CHCL</span><span class="ti-dn">&#9660; 680.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">GBIME</span><span class="ti-up">&#9650; 295.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">NMB</span><span class="ti-up">&#9650; 440.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">SBL</span><span class="ti-dn">&#9660; 388.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">UPPER</span><span class="ti-up">&#9650; 205.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">MHL</span><span class="ti-dn">&#9660; 167.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">RHGCL</span><span class="ti-up">&#9650; 310.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">API</span><span class="ti-up">&#9650; 210.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">AHPC</span><span class="ti-dn">&#9660; 180.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">BPCL</span><span class="ti-up">&#9650; 340.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">NABIL</span><span class="ti-up">&#9650; 1,618.50</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">NICA</span><span class="ti-dn">&#9660; 892.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">SBI</span><span class="ti-up">&#9650; 345.60</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">EBL</span><span class="ti-up">&#9650; 1,240.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">KBL</span><span class="ti-dn">&#9660; 410.50</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">MBL</span><span class="ti-up">&#9650; 520.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">CHCL</span><span class="ti-dn">&#9660; 680.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">GBIME</span><span class="ti-up">&#9650; 295.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">NMB</span><span class="ti-up">&#9650; 440.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">SBL</span><span class="ti-dn">&#9660; 388.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">UPPER</span><span class="ti-up">&#9650; 205.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">MHL</span><span class="ti-dn">&#9660; 167.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">RHGCL</span><span class="ti-up">&#9650; 310.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">API</span><span class="ti-up">&#9650; 210.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">AHPC</span><span class="ti-dn">&#9660; 180.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">BPCL</span><span class="ti-up">&#9650; 340.00</span></div><span class="ti-sep">&bull;</span>
+</div></div>
+<div class="page-offset">
+  <div class="main-wrap">
+    <div class="content">
+    <div id="flash-messages"></div>
+<!-- HERO + MARKET SUMMARY -->
+<div class="hero-dashboard">
+  <div class="hero-left">
+    <div class="hero-eyebrow">&#9679; Stock Prediction Platform</div>
+    <h1 class="hero-title">Predict Tomorrow's Price With Predictive Models</h1>
+    <p class="hero-sub">Welcome to ShareSathi! This project is an advanced stock market analysis system tailored for the Nepalese stock market. It leverages algorithm-driven models (Linear Regression & Neural Networks) alongside Natural Language Processing for news sentiment analysis. Use our platform to gain data-driven insights and explore predictions based on historical price actions and market sentiment.</p>
+    <a href="/predict" class="btn btn-primary btn-lg">Start Predicting &#8594;</a>
+  </div>
+  <div class="hero-graphic">
+    <div class="pulse-container">
+      <div class="pulse-line">
+        <svg viewBox="0 0 300 120" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="pulseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#3b82f6" />
+              <stop offset="100%" stop-color="#8b5cf6" />
+            </linearGradient>
+          </defs>
+          <path d="M-10,80 C40,80 60,20 100,20 C140,20 160,100 200,100 C240,100 260,40 310,40" class="pulse-path" />
+        </svg>
+      </div>
+      <div class="pulse-nodes">
+        <div class="pulse-node n1">
+          <span class="node-lbl">NABIL</span>
+          <span class="node-val up">&#9650; 2.4%</span>
+        </div>
+        <div class="pulse-node n2">
+          <span class="node-lbl">GBIME</span>
+          <span class="node-val up">&#9650; 1.8%</span>
+        </div>
+        <div class="pulse-node n3">
+          <span class="node-lbl">CHCL</span>
+          <span class="node-val down">&#9660; 0.5%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MARKET SUMMARY CARDS -->
+<div class="market-summary">
+  <div class="summary-card">
+    <div class="summary-icon"><i class="fa-solid fa-building text-accent"></i></div>
+    <div class="summary-content">
+      <div class="summary-label">17 Companies</div>
+      <div class="summary-value font-num">Tracked</div>
+    </div>
+  </div>
+  <div class="summary-card">
+    <div class="summary-icon"><i class="fa-solid fa-brain text-purple"></i></div>
+    <div class="summary-content">
+      <div class="summary-label">2 Models</div>
+      <div class="summary-value font-num">LR &amp; ANN</div>
+    </div>
+  </div>
+  <div class="summary-card">
+    <div class="summary-icon"><i class="fa-regular fa-newspaper text-gold"></i></div>
+    <div class="summary-content">
+      <div class="summary-label">5-Class Sentiment</div>
+      <div class="summary-value font-num">From News</div>
+    </div>
+  </div>
+  <div class="summary-card">
+    <div class="summary-icon"><i class="fa-solid fa-arrow-trend-up text-green"></i></div>
+    <div class="summary-content">
+      <div class="summary-label">Historical</div>
+      <div class="summary-value font-num">Analytics</div>
+    </div>
+  </div>
+</div>
+
+<!-- PLATFORM METHODOLOGY -->
+<div class="methodology-section">
+  <div class="methodology-head">
+    <h2 class="section-title">Platform Methodology</h2>
+    <p class="section-desc">A transparent, data-driven pipeline designed for quantitative analysis.</p>
+  </div>
+  <div class="method-grid">
+    <div class="method-card">
+      <div class="method-icon"><i class="fa-solid fa-database text-accent"></i></div>
+      <div class="method-title">1. Data Aggregation</div>
+      <div class="method-desc">We compile comprehensive historical trading data alongside relevant financial news coverage for each tracked equity.</div>
+    </div>
+    <div class="method-card">
+      <div class="method-icon"><i class="fa-solid fa-language text-purple"></i></div>
+      <div class="method-title">2. Sentiment Extraction</div>
+      <div class="method-desc">Natural Language Processing techniques evaluate news headlines to generate a numerical polarity score, ranging from strongly bearish to strongly bullish.</div>
+    </div>
+    <div class="method-card">
+      <div class="method-icon"><i class="fa-solid fa-chart-line text-green"></i></div>
+      <div class="method-title">3. Statistical Modeling</div>
+      <div class="method-desc">Both traditional Linear Regression and multi-layer Neural Networks process the fused datasets to identify underlying price action correlations.</div>
+    </div>
+    <div class="method-card">
+      <div class="method-icon"><i class="fa-solid fa-bullseye text-gold"></i></div>
+      <div class="method-title">4. Price Forecasting</div>
+      <div class="method-desc">The trained models output a projected next-day Last Traded Price (LTP), providing a statistical baseline for your market strategy.</div>
+    </div>
+  </div>
+</div>
+
+<!-- PREDICT CTA SECTION -->
+<div class="predict-cta">
+  <div class="predict-cta-content">
+    <h2>Ready to Predict?</h2>
+    <p>Select any stock and compare Linear Regression vs ANN predictions with real sentiment analysis.</p>
+    <a href="/predict" class="btn btn-lg btn-outline">Go to Predictor &#8594;</a>
+  </div>
+</div>
+<div class="site-info-section" id="project-info">
+  <div class="site-info-head">
+    <div class="eyebrow">Project Overview</div>
+    <h2>About The ShareSathi Project</h2>
+    <p>ShareSathi was developed to provide a comprehensive, data-backed approach to stock market analysis. By combining traditional technical analysis concepts with modern prediction algorithms and sentiment extraction, this system aims to demonstrate how continuous data streams can enhance trading decisions.</p>
+  </div>
+  <div class="info-grid">
+    <div class="info-box">
+      <div class="info-box-title">Predictive Models</div>
+      <div class="info-box-text">We train Linear Regression and Neural Network models using historical market data to forecast short-term and long-term price movements.</div>
+    </div>
+    <div class="info-box">
+      <div class="info-box-title">Data-driven decisions</div>
+      <div class="info-box-text">Use real historical stock and sentiment data to compare Linear Regression and ANN predictions for each company.</div>
+    </div>
+    <div class="info-box">
+      <div class="info-box-title">Trusted analytics</div>
+      <div class="info-box-text">Sentiment signals, prediction scores, and chart analytics help create a credible investor-facing experience.</div>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      ShareSathi
+      <p>Stock intelligence for Nepali equities. Practical prediction, sentiment signal, and model comparison in a polished web experience.</p>
+    </div>
+    <div class="footer-links">
+      <strong>Platform</strong>
+      <a href="/">Home</a>
+      <a href="/predict">Predict</a>
+      <a href="/sentiment">Sentiment</a>
+    </div>
+    <div class="footer-links">
+      <strong>Website Information</strong>
+      <span>Data source: historical price and news sentiment datasets.</span>
+      <span>Model training: offline regression and ANN with sentiment labels.</span>
+      <span>Admin access: session-secured dashboard and training management.</span>
+    </div>
+  </div>
+  <div class="footer-note">
+    <span>© 2026 ShareSathi</span>
+    <span>Built as a practical stock analytics system, not just a demo.</span>
+    <span>Powered by Python, Flask, pandas, and Chart.js.</span>
+  </div>
+</footer>
+<script>
+
+const SIG=[
+  {min:0.75, cls:'gs-sbull',bc:'b-sbull',ci:'c4',lb:'STRONG BULLISH',dc:'Very positive news sentiment. Strong upward confidence.'},
+  {min:0.25, cls:'gs-wbull',bc:'b-wbull',ci:'c3',lb:'WEAK BULLISH',  dc:'Mildly positive sentiment. Some upward pressure detected.'},
+  {min:-0.25,cls:'gs-neut', bc:'b-neut', ci:'c2',lb:'NEUTRAL',        dc:'No strong directional signal. Market sentiment is flat.'},
+  {min:-0.75,cls:'gs-wbear',bc:'b-wbear',ci:'c1',lb:'WEAK BEARISH',  dc:'Mildly negative sentiment. Some downward pressure detected.'},
+  {min:-1.1, cls:'gs-sbear',bc:'b-sbear',ci:'c0',lb:'STRONG BEARISH',dc:'Very negative news sentiment. Strong downward pressure.'},
+];
+const CATS=['c0','c1','c2','c3','c4'];
+const CN={NABIL:'Nabil Bank',NICA:'NIC Asia Bank',SBI:'SBI Bank',EBL:'Everest Bank',KBL:'Kumari Bank',MBL:'Machhapuchchhre Bank',CHCL:'Chilime Hydropower',GBIME:'Global IME Bank',NMB:'NMB Bank',SBL:'Sanima Bank',UPPER:'Upper Tamakoshi',MHL:'Marsyangdi Hydropower',RHGCL:'Ridi Hydropower',API:'Api Power',AHPC:'Arun Valley',BPCL:'Butwal Power'};
+function applyGauge(sym,score){
+  const sig=SIG.find(s=>score>=s.min)||SIG[4];
+  // Needle: score -1→-90deg, 0→0deg, +1→+90deg
+  const el=document.getElementById('gNeedle');
+  if(el) el.style.transform='rotate('+(score*90)+'deg)';
+  const cs=document.getElementById('gCentreScore');
+  if(cs){cs.textContent=score.toFixed(2);cs.setAttribute('opacity','1');}
+  // Categories
+  CATS.forEach(id=>{const e=document.getElementById(id);if(e)e.classList.remove('active');});
+  const ac=document.getElementById(sig.ci);
+  if(ac) ac.classList.add('active');
+  // Score number
+  const sn=document.getElementById('gScoreNum');
+  if(sn){sn.textContent=score.toFixed(2);sn.className='gauge-score-num '+sig.cls;}
+  // Badge
+  const bd=document.getElementById('gBadge');
+  if(bd){bd.textContent=sig.lb;bd.className='badge gauge-badge-lg '+sig.bc;}
+  // Desc
+  const dc=document.getElementById('gDescTxt');
+  if(dc) dc.textContent=sig.dc;
+  // Result visibility
+  const gr=document.getElementById('gResult');
+  if(gr) gr.style.display='flex';
+  // Sym / name
+  const gn=document.getElementById('gSym');if(gn)gn.textContent=sym;
+  const gfn=document.getElementById('gFull');if(gfn)gfn.textContent=CN[sym]||sym;
+}
+
+</script>
+<script src="/static/site.js?v=2"></script>
+    </div>
+  </div>
+</div>
+</body>
+</html>

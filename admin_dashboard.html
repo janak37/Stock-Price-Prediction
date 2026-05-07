@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Admin Dashboard &mdash; ShareSathi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/static/admin_dashboard.css">
+</head>
+<body data-page="admin-dashboard">
+<nav class="navbar">
+  <a href="/" class="nav-logo">
+    <div class="nav-logo-icon">S</div>
+    <div class="nav-logo-text">
+      <div class="nav-logo-name">Share<span>Sathi</span></div>
+      <div class="nav-logo-sub">ADMIN PANEL</div>
+    </div>
+  </a>
+  <div class="nav-right" style="margin-left:auto">
+    <a href="/" class="nav-admin-btn">&#127968; Main Site</a>
+    <a href="/admin/logout" class="nav-admin-btn">Logout</a>
+  </div>
+</nav>
+<div class="ticker-wrap"><div class="ticker">
+  <div class="ti"><span class="ti-sym">NABIL</span><span class="ti-up">&#9650; 1,618.50</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">NICA</span><span class="ti-dn">&#9660; 892.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">SBI</span><span class="ti-up">&#9650; 345.60</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">EBL</span><span class="ti-up">&#9650; 1,240.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">KBL</span><span class="ti-dn">&#9660; 410.50</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">MBL</span><span class="ti-up">&#9650; 520.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">CHCL</span><span class="ti-dn">&#9660; 680.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">GBIME</span><span class="ti-up">&#9650; 295.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">NMB</span><span class="ti-up">&#9650; 440.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">SBL</span><span class="ti-dn">&#9660; 388.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">UPPER</span><span class="ti-up">&#9650; 205.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">MHL</span><span class="ti-dn">&#9660; 167.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">RHGCL</span><span class="ti-up">&#9650; 310.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">NABIL</span><span class="ti-up">&#9650; 1,618.50</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">NICA</span><span class="ti-dn">&#9660; 892.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">SBI</span><span class="ti-up">&#9650; 345.60</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">EBL</span><span class="ti-up">&#9650; 1,240.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">KBL</span><span class="ti-dn">&#9660; 410.50</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">MBL</span><span class="ti-up">&#9650; 520.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">CHCL</span><span class="ti-dn">&#9660; 680.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">GBIME</span><span class="ti-up">&#9650; 295.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">NMB</span><span class="ti-up">&#9650; 440.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">SBL</span><span class="ti-dn">&#9660; 388.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">UPPER</span><span class="ti-up">&#9650; 205.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">MHL</span><span class="ti-dn">&#9660; 167.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">RHGCL</span><span class="ti-up">&#9650; 310.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">API</span><span class="ti-up">&#9650; 210.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">AHPC</span><span class="ti-dn">&#9660; 180.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">BPCL</span><span class="ti-up">&#9650; 340.00</span></div><span class="ti-sep">&bull;</span>
+</div></div>
+<div class="page-offset">
+  <div class="main-wrap">
+    <div class="content">
+      <div class="admin-nav">
+        <a href="/admin" class="nav-pill active"><span class="icon">&#128202;</span> Dashboard</a>
+        <a href="/admin/training" class="nav-pill"><span class="icon">&#128196;</span> Training</a>
+        <a href="/sentiment" class="nav-pill"><span class="icon">&#128202;</span> Stock Indicator</a>
+        <a href="/predict" class="nav-pill"><span class="icon">&#128185;</span> Predict</a>
+      </div>
+      <div id="admin-dashboard-alert" class="alert alert-error" style="display:none"></div>
+      <div class="page-head">
+        <h1>Dashboard</h1>
+        <p>Overview of the ShareSathi prediction system.</p>
+      </div>
+
+      <div class="stat-row">
+        <div class="stat-card stat-accent">
+          <div class="stat-card-label">&#127970; Companies</div>
+          <div class="stat-card-val font-num" id="total-companies">--</div>
+          <div class="stat-card-sub">In dataset</div>
+        </div>
+        <div class="stat-card stat-green">
+          <div class="stat-card-label">&#128196; Training Samples</div>
+          <div class="stat-card-val font-num" id="total-training">--</div>
+          <div class="stat-card-sub">In CSV file</div>
+        </div>
+        <div class="stat-card stat-gold">
+          <div class="stat-card-label">&#128202; Sentiment Classes</div>
+          <div class="stat-card-val font-num">5</div>
+          <div class="stat-card-sub">Strong Bearish &rarr; Strong Bullish</div>
+        </div>
+        <div class="stat-card stat-purple">
+          <div class="stat-card-label">&#9989; Companies Scored</div>
+          <div class="stat-card-val font-num" id="sentiment-company-count">--</div>
+          <div class="stat-card-sub">With sentiment CSV</div>
+        </div>
+      </div>
+
+      <div class="card mb-24" id="training-dist-card" style="display:none">
+        <div class="card-title"><span class="ct-icon">&#128202;</span> Training Data Distribution</div>
+        <div id="training-dist"></div>
+      </div>
+
+      <div class="card mb-24">
+        <div class="card-title"><span class="ct-icon">&#128295;</span> Quick Tools</div>
+        <div class="tool-grid">
+          <a href="/admin/training" class="tool-card"><div class="tool-icon">&#128196;</div><div><div class="tool-title">Manage Training Data</div><div class="tool-desc">Add or remove sentiment samples</div></div></a>
+          <a href="/sentiment" class="tool-card"><div class="tool-icon">&#128202;</div><div><div class="tool-title">Stock Indicator</div><div class="tool-desc">View sentiment gauges</div></div></a>
+          <a href="/predict" class="tool-card"><div class="tool-icon">&#128185;</div><div><div class="tool-title">Run Prediction</div><div class="tool-desc">Test the ML models</div></div></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title"><span class="ct-icon">&#128202;</span> Sentiment Scores from CSV Data</div>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>Company</th><th>Score</th><th>Signal</th></tr></thead>
+            <tbody id="sentiment-scores-body"></tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      ShareSathi
+      <p>Admin workspace for the prediction system, with quick access to sentiment training and model analytics.</p>
+    </div>
+    <div class="footer-links">
+      <strong>Admin Links</strong>
+      <a href="/admin">Dashboard</a>
+      <a href="/admin/training">Training Data</a>
+      <a href="/">Main Site</a>
+    </div>
+    <div class="footer-links">
+      <strong>System Information</strong>
+      <span>Session-protected admin pages.</span>
+      <span>Training samples stored in CSV.</span>
+      <span>Predictions powered by LR and ANN models.</span>
+    </div>
+  </div>
+  <div class="footer-note">
+    <span>© 2026 ShareSathi</span>
+    <span>Clean admin dashboard layout with site-level information.</span>
+  </div>
+</footer>
+<script src="/static/site.js"></script>
+</body>
+</html>

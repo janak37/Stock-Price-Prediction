@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Companies &mdash; ShareSathi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/static/index.css"/>
+</head>
+<body data-page="companies">
+<nav class="navbar">
+  <a href="/" class="nav-logo">
+    <div class="nav-logo-icon">&#x53;</div>
+    <div class="nav-logo-text">
+      <div class="nav-logo-name">Share<span>Sathi</span></div>
+      <div class="nav-logo-sub">सेयर साथी · Stock Prediction</div>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="/" class="nav-a">Home</a>
+    <a href="/companies" class="nav-a cur">Companies</a>
+    <a href="/predict" class="nav-a">Predict</a>
+    <a href="/sentiment" class="nav-a">Sentiment</a>
+  </div>
+  <div class="nav-right" id="nav-right">
+    <a href="/admin/login" class="nav-admin-btn">Admin Login</a>
+  </div>
+</nav>
+<div class="ticker-wrap"><div class="ticker">
+  <div class="ti"><span class="ti-sym">NABIL</span><span class="ti-up">&#9650; 1,618.50</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">NICA</span><span class="ti-dn">&#9660; 892.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">SBI</span><span class="ti-up">&#9650; 345.60</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">EBL</span><span class="ti-up">&#9650; 1,240.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">KBL</span><span class="ti-dn">&#9660; 410.50</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">MBL</span><span class="ti-up">&#9650; 520.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">CHCL</span><span class="ti-dn">&#9660; 680.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">GBIME</span><span class="ti-up">&#9650; 295.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">NMB</span><span class="ti-up">&#9650; 440.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">SBL</span><span class="ti-dn">&#9660; 388.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">UPPER</span><span class="ti-up">&#9650; 205.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">API</span><span class="ti-up">&#9650; 210.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">AHPC</span><span class="ti-dn">&#9660; 180.00</span></div><span class="ti-sep">&bull;</span>
+  <div class="ti"><span class="ti-sym">BPCL</span><span class="ti-up">&#9650; 340.00</span></div><span class="ti-sep">&bull;</span>
+</div></div>
+<div class="page-offset">
+  <div class="main-wrap">
+    <div class="content">
+      <div class="page-head">
+        <h1>Companies</h1>
+        <p>Explore the equities monitored by ShareSathi and use this list as a gateway to prediction and sentiment analytics.</p>
+      </div>
+
+      <div class="card mb-24">
+        <div class="card-title"><span class="ct-icon">&#128200;</span> Supported Companies</div>
+        <div id="company-list" class="company-grid">Loading company list…</div>
+      </div>
+
+      <div class="site-info-section">
+        <div class="site-info-head">
+          <div class="eyebrow">Overview</div>
+          <h2>Market coverage for Nepalese equities.</h2>
+          <p>ShareSathi tracks a set of listed companies to provide prediction, sentiment, and price analytics in a single operational interface.</p>
+        </div>
+        <div class="info-grid">
+          <div class="info-box">
+            <div class="info-box-title">Equity catalog</div>
+            <div class="info-box-text">All companies in the system are available for model predictions and sentiment scoring.</div>
+          </div>
+          <div class="info-box">
+            <div class="info-box-title">Selection made easy</div>
+            <div class="info-box-text">Choose any listed company and run the prediction workflow from one place.</div>
+          </div>
+          <div class="info-box">
+            <div class="info-box-title">Integrated analytics</div>
+            <div class="info-box-text">Linked sentiment, prediction, and dataset information supports a real platform experience.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      ShareSathi
+      <p>A company directory for the prediction platform, helping users navigate available equity models.</p>
+    </div>
+    <div class="footer-links">
+      <strong>Quick Links</strong>
+      <a href="/">Home</a>
+      <a href="/companies">Companies</a>
+      <a href="/predict">Predict</a>
+      <a href="/sentiment">Sentiment</a>
+    </div>
+    <div class="footer-links">
+      <strong>Platform Info</strong>
+      <span>Equities are loaded from the model file directory.</span>
+      <span>Company data is updated from processed CSV files.</span>
+      <span>Use predictions and sentiment signals together for better insight.</span>
+    </div>
+  </div>
+  <div class="footer-note">
+    <span>© 2026 ShareSathi</span>
+    <span>Company navigation added to the site navbar for easier access.</span>
+  </div>
+</footer>
+<script src="/static/site.js"></script>
+<script>
+  async function initCompanies() {
+    const root = document.getElementById('company-list');
+    const res = await fetchJSON(API.companies);
+    if (!root) return;
+    root.innerHTML = '';
+    if (!res.ok || !res.data || !Array.isArray(res.data.companies)) {
+      root.textContent = 'Unable to load companies at this time.';
+      return;
+    }
+    const companies = res.data.companies;
+    const categories = res.data.categories;
+    
+    if (categories) {
+      for (const [catName, symbols] of Object.entries(categories)) {
+        const header = document.createElement('div');
+        header.style.gridColumn = "1 / -1";
+        header.style.marginTop = "16px";
+        header.style.marginBottom = "4px";
+        header.style.fontWeight = "700";
+        header.style.fontSize = "16px";
+        header.style.color = "var(--accent)";
+        header.style.borderBottom = "1px solid var(--border)";
+        header.style.paddingBottom = "8px";
+        header.textContent = catName;
+        root.appendChild(header);
+
+        symbols.forEach((symbol) => {
+          const item = document.createElement('a');
+          item.href = `/predict?company=${symbol}`;
+          item.style.textDecoration = 'none';
+          item.className = 'company-card';
+          item.innerHTML = `<div style="text-align:center"><div style="font-weight:800;font-size:18px;">${symbol}</div><div style="font-size:12px;color:var(--muted);font-weight:500;">${window.CN?.[symbol] || ''}</div></div>`;
+          root.appendChild(item);
+        });
+      }
+    } else {
+      companies.forEach((symbol) => {
+        const item = document.createElement('a');
+        item.href = `/predict?company=${symbol}`;
+        item.style.textDecoration = 'none';
+        item.className = 'company-card';
+        item.textContent = symbol;
+        root.appendChild(item);
+      });
+    }
+  }
+  window.addEventListener('DOMContentLoaded', () => {
+    loadAdminState();
+    initCompanies();
+  });
+</script>
+</body>
+</html>
