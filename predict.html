@@ -156,14 +156,16 @@
       <div class="info-cell"><div class="info-lbl">Sentiment</div><div class="info-val" id="latest-sentiment">--</div></div>
     </div>
 
+    <div id="movement-analysis" class="movement-analysis-card" style="display:none"></div>
+
     <div style="font-size:11.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:12px">Analytics Charts</div>
-    <div class="chart-card"><div class="chart-card-title">R&sup2; Accuracy Comparison</div><div style="height:120px"><canvas id="r2Ch"></canvas></div></div>
-    <div class="chart-card"><div class="chart-card-title">Predicted Price &mdash; LR vs ANN</div><div style="height:120px"><canvas id="prCh"></canvas></div></div>
-    <div class="chart-card"><div class="chart-card-title">Actual vs Predicted (Historical)</div><div style="height:220px"><canvas id="avpCh"></canvas></div></div>
-    <div class="chart-card"><div class="chart-card-title">LTP + 20-Day Moving Average</div><div style="height:200px"><canvas id="maCh"></canvas></div></div>
-    <div class="chart-card"><div class="chart-card-title">RSI &mdash; Relative Strength Index (14-day)</div><div style="height:170px"><canvas id="rsiCh"></canvas></div></div>
-    <div class="chart-card"><div class="chart-card-title">Volume (Qty Traded)</div><div style="height:160px"><canvas id="volCh"></canvas></div></div>
-    <div class="chart-card"><div class="chart-card-title">Daily Sentiment Score</div><div style="height:160px"><canvas id="sentCh"></canvas></div></div>
+    <div class="chart-card"><div class="chart-card-title">R&sup2; Accuracy Comparison</div><div style="height:120px"><canvas id="r2Ch"></canvas></div><div class="chart-desc">Shows model accuracy on a scale of 0-100%. Higher score means the model predicted prices more accurately on historical data. The better-performing model should give more reliable next-day predictions.</div></div>
+    <div class="chart-card"><div class="chart-card-title">Predicted Price &mdash; LR vs ANN</div><div style="height:120px"><canvas id="prCh"></canvas></div><div class="chart-desc">Tomorrow's predicted Last Traded Price (LTP) from both models. If predictions are close, both models agree. If they differ widely, there's uncertainty in the prediction—check other indicators before trading.</div></div>
+    <div class="chart-card"><div class="chart-card-title">Actual vs Predicted (Historical)</div><div style="height:220px"><canvas id="avpCh"></canvas></div><div class="chart-desc">Solid line = real historical prices. Dashed lines = what the models predicted on those days. If predictions closely follow actual prices, the model is reliable. Large gaps mean the model struggles with sudden price swings.</div></div>
+    <div class="chart-card"><div class="chart-card-title">LTP + 20-Day Moving Average</div><div style="height:200px"><canvas id="maCh"></canvas></div><div class="chart-desc">Blue line = daily price (volatile). Green line = smoothed 20-day average (shows trend). If price is above MA, uptrend is active. If below, downtrend is active. Crossovers signal trend changes.</div></div>
+    <div class="chart-card"><div class="chart-card-title">RSI &mdash; Relative Strength Index (14-day)</div><div style="height:170px"><canvas id="rsiCh"></canvas></div><div class="chart-desc">RSI above 70 = overbought (price may fall soon). RSI below 30 = oversold (price may rise soon). RSI between 30-70 = normal. Use this to spot when a stock is due for reversal.</div></div>
+    <div class="chart-card"><div class="chart-card-title">Volume (Qty Traded)</div><div style="height:160px"><canvas id="volCh"></canvas></div><div class="chart-desc">Shows how many shares were traded daily. High volume spikes indicate strong buying/selling interest. Volume confirms price moves—if price rises without volume, it's weaker. Falling volume on trend reversal suggests weakness.</div></div>
+    <div class="chart-card"><div class="chart-card-title">Daily Sentiment Score</div><div style="height:160px"><canvas id="sentCh"></canvas></div><div class="chart-desc">Sentiment ranges from -1 (Strong Bearish/sell) to +1 (Strong Bullish/buy). Track sentiment trend: rising sentiment often precedes price rises. If sentiment contradicts price action, expect reversal soon.</div></div>
     <div class="site-info-section">
       <div class="site-info-head">
         <div class="eyebrow">Website Information</div>
